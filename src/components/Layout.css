@@ -1,0 +1,14 @@
+/* src/components/Layout.css */
+
+.layout-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fb;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #111827;
+}
+
+.layout-main {
+  flex: 1;
+}

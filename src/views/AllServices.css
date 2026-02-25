@@ -1,0 +1,151 @@
+/* ================= PAGE ================= */
+
+.all-services-page {
+  padding: 80px 8%;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.services-header {
+  max-width: 720px;
+  margin-bottom: 60px;
+}
+
+.services-header h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 26px;
+}
+
+/* ================= SEARCH ================= */
+
+.service-search {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  font-size: 15px;
+  background: #f8fafc;
+  transition: 0.25s ease;
+}
+
+.service-search:focus {
+  outline: none;
+  border-color: #203560;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(32, 53, 96, 0.08);
+}
+
+/* ================= CATEGORY ================= */
+
+.service-category {
+  margin-bottom: 55px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.category-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.category-header span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #203560;
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+/* ================= GRID ================= */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+/* ================= CARD ================= */
+
+.service-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  transition: 0.28s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+  border-color: #e2e8f0;
+}
+
+/* ================= CARD CONTENT ================= */
+
+.service-card-content h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.service-card-content p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ================= BUTTON ================= */
+
+.card-btn {
+  margin-top: 18px;
+  background: transparent;
+  border: none;
+  color: #203560;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.card-btn:hover {
+  text-decoration: underline;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 34px;
+  }
+
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
